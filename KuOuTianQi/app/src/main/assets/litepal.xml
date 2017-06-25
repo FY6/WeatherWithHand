@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--
+    configure the database name of project.
+    数据库名；配置项目的数据库名称
+    -->
+    <dbname value="kuou_tianqi" />
+
+    <!--
+     configure the version of database. Each time you want to upgrade database, plus the value here.
+    配置数据库版本号，，每次需要更新数据库，改变这个值即可；
+    -->
+    <version value="1" />
+
+    <!--
+    configure the mapping classe
+    	用于指定所有的映射模型，即配置映射类
+    -->
+    <list>
+        <mapping class="wfy.com.kuoutianqi.db.Province" />
+        <mapping class="wfy.com.kuoutianqi.db.City" />
+        <mapping class="wfy.com.kuoutianqi.db.County" />
+    </list>
+
+    <!-- configure where the database file should be stored. internal and external are the only valid
+     options.-->
+    <!--配置数据库文件应该被存储在哪里，只有两个可选：internal 和 extrenal-->
+    <!--<storage value="external" />-->
+
+</litepal>
